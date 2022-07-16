@@ -25,8 +25,14 @@ class TaskControllerTest extends TestCase
                     'title',
                     'status'
                 ],
-              ],
-          ]
+              ]
+
+          ])->assertJsonCount(15,'data') ->assertJson(
+              [
+                  'meta' =>[
+                      'total' => 20
+                  ]
+              ]
         );
     }
 
