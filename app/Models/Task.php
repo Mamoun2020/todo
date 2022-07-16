@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Task extends Model
 {
     use HasFactory;
+    protected $guarded =[];
+    protected $attributes=[
+      'status' => false,
+    ];
+    protected $casts =[
+        'status' => 'boolean',
+        ];
 }
