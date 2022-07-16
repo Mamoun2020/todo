@@ -38,10 +38,6 @@ class TaskController extends Controller
      * @param  \App\Models\Task  $task
      * @return \Illuminate\Http\Response
      */
-    public function show(Task $task)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
